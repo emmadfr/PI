@@ -1,0 +1,26 @@
+﻿<Window x:Class="Motion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Motion"
+        mc:Ignorable="d"
+        Title="MainWindow" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Grid>
+        
+        <UserControl VerticalAlignment="Top" HorizontalAlignment="Left" Height="1080" Width="1920">
+            <Border x:Name="RecordingBorder1" BorderThickness="2" BorderBrush="Black">
+                <Image Name="camera" Stretch="Fill" />
+            </Border>
+        </UserControl>
+
+        <UserControl VerticalAlignment="Top" HorizontalAlignment="Left" Height="1080" Width="1920">
+            <Border x:Name="RecordingBorder2" BorderThickness="2" BorderBrush="Black">
+                <Canvas Name="canvas" Margin="0,0,0,0"/>
+            </Border>
+        </UserControl>
+
+        <Image Name="instructions" Stretch="Fill" />
+
+    </Grid>
+</Window>
