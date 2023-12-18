@@ -307,31 +307,31 @@ namespace Motion
                 file.WriteLine("DataRate" + "\t" + "CameraRate" + "\t" + "NumFrames" + "\t" + "NumMarkers" + "\t" + "Units" + "\t" + "OrigDataRate" + "\t" + "OrigDataStartFrame" + "\t" + "OrigNumFrames");
                 file.WriteLine("30.00" + "\t" + "30.00" + "\t" + counter.ToString() + "\t" + "25" + "\t" + "mm" + "\t" + "30.00" + "\t" + "1" + "\t" + "1");
                 file.WriteLine("Frame#" + "\t" + "Time" + "\t" +
-                    "SpineBase" + "\t" + "\t" + "\t" +
+                    "HipCenter" + "\t" + "\t" + "\t" +
                     "SpineMid" + "\t" + "\t" + "\t" +
                     "Neck" + "\t" + "\t" + "\t" +
                     "Head" + "\t" + "\t" + "\t" +
-                    "ShoulderLeft" + "\t" + "\t" + "\t" +
-                    "ElbowLeft" + "\t" + "\t" + "\t" +
-                    "WristLeft" + "\t" + "\t" + "\t" +
-                    "HandLeft" + "\t" + "\t" + "\t" +
-                    "ShoulderRight" + "\t" + "\t" + "\t" +
-                    "ElbowRight" + "\t" + "\t" + "\t" +
-                    "WristRight" + "\t" + "\t" + "\t" +
-                    "HandRight" + "\t" + "\t" + "\t" +
-                    "HipLeft" + "\t" + "\t" + "\t" +
-                    "KneeLeft" + "\t" + "\t" + "\t" +
-                    "AnkleLeft" + "\t" + "\t" + "\t" +
-                    "FootLeft" + "\t" + "\t" + "\t" +
-                    "HipRigth" + "\t" + "\t" + "\t" +
-                    "KneeRight" + "\t" + "\t" + "\t" +
-                    "AnkleRight" + "\t" + "\t" + "\t" +
-                    "FootRight" + "\t" + "\t" + "\t" +
-                    "SpineShoulder" + "\t" + "\t" + "\t" +
-                    "HandTipLeft" + "\t" + "\t" + "\t" +
-                    "ThumbLeft" + "\t" + "\t" + "\t" +
-                    "HandTipRight" + "\t" + "\t" + "\t" +
-                    "ThumbRight");
+                    "L.Shoulder" + "\t" + "\t" + "\t" +
+                    "L.Elbow" + "\t" + "\t" + "\t" +
+                    "L.Wrist" + "\t" + "\t" + "\t" +
+                    "L.Hand" + "\t" + "\t" + "\t" +
+                    "R.Shoulder" + "\t" + "\t" + "\t" +
+                    "R.Elbow" + "\t" + "\t" + "\t" +
+                    "R.Wrist" + "\t" + "\t" + "\t" +
+                    "R.Hand" + "\t" + "\t" + "\t" +
+                    "L.Hip" + "\t" + "\t" + "\t" +
+                    "L.Knee" + "\t" + "\t" + "\t" +
+                    "L.Ankle" + "\t" + "\t" + "\t" +
+                    "L.Foot" + "\t" + "\t" + "\t" +
+                    "R.Hip" + "\t" + "\t" + "\t" +
+                    "R.Knee" + "\t" + "\t" + "\t" +
+                    "R.Ankle" + "\t" + "\t" + "\t" +
+                    "R.Foot" + "\t" + "\t" + "\t" +
+                    "ShoulderMid" + "\t" + "\t" + "\t" +
+                    "L.HandTip" + "\t" + "\t" + "\t" +
+                    "L.Thumb" + "\t" + "\t" + "\t" +
+                    "R.HandTip" + "\t" + "\t" + "\t" +
+                    "R.Thumb");
                 file.Write("\t" + "\t");
                 for (int i = 1; i <= 25; i++)
                 {
