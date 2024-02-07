@@ -234,7 +234,7 @@ namespace Motion
 
                             // define the origin point
                             originX = body.Joints[JointType.SpineBase].Position.X;
-                            originY = body.Joints[JointType.SpineBase].Position.Y;
+                            originY = body.Joints[JointType.FootRight].Position.Y;
                             originZ = body.Joints[JointType.SpineBase].Position.Z;
                             
                             if (recording)
@@ -347,7 +347,7 @@ namespace Motion
                     file.Write((number + 1).ToString() + "\t" + Time[number] + "\t");
                     for (int i = 0; i < arr.Length; i++)
                     {
-                        arr[i] = Math.Round(arr[i], 4, MidpointRounding.ToEven);
+                        arr[i] = Math.Round(arr[i], 4, MidpointRounding.ToEven) - Math.Round(arr[0], 4, MidpointRounding.ToEven);
                     }
                     string line = string.Join("\t", arr);
                     file.WriteLine(line);
